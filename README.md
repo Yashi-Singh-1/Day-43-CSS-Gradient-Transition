@@ -10,7 +10,7 @@
 
 <h2>Live Demo</h2>
 
-<p>Check out the live demo <a href="hhttps://codepen.io/Yashi-Singh/pen/xxoOVEO">here</a>.</p>
+<p>Check out the live demo <a href="https://codepen.io/Yashi-Singh/pen/xxoOVEO">here</a>.</p>
 
 <h2>Prerequisites</h2>
 
