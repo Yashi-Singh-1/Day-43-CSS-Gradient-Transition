@@ -1,0 +1,216 @@
+/* Define colors */
+:root {
+    --colorA: #77c8c0;
+    --colorAA: #267aac;
+    --colorB: #4ad7b8;
+    --colorBB: #f39c12;
+    --colorC1: #a5fecb;
+    --colorC2: #20bdff;
+    --colorC3: #5433ff;
+    --colorD1: #f64f59;
+    --colorD2: #c471ed;
+    --colorD3: #12c2e9;
+    --colorE1: #ec2f4b;
+    --colorE2: #009fff;
+    --colorF1: #fffde4;
+    --colorF2: #005aa7;
+    --colorG1: #1d2671;
+    --colorG2: #c33764;
+    --colorH1: #b06ab3;
+    --colorH2: #4568dc;
+    --colorI1: #ec6ead;
+    --colorI2: #3494e6;
+  }
+  
+  /* Gradient definitions */
+  .gradient-1 {
+    background: var(--colorA);
+    background: -moz-linear-gradient(
+      -45deg,
+      var(--colorA) 0%,
+      var(--colorAA) 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--colorA) 0%,
+      var(--colorAA) 100%
+    );
+    background: linear-gradient(-45deg, var(--colorA) 0%, var(--colorAA) 100%);
+  }
+  
+  .gradient-2 {
+    z-index: 2;
+    opacity: 0;
+    background: var(--colorB);
+    background: -moz-linear-gradient(
+      -45deg,
+      var(--colorB) 0%,
+      var(--colorBB) 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--colorB) 0%,
+      var(--colorBB) 100%
+    );
+    background: linear-gradient(-45deg, var(--colorB) 0%, var(--colorBB) 100%);
+    animation: gradient 4s ease-in-out infinite;
+  }
+  
+  .gradient-3 {
+    background: var(--colorC1);
+    background: -moz-linear-gradient(
+      -45deg,
+      var(--colorC1) 0%,
+      var(--colorC2) 50%,
+      var(--colorC3) 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--colorC1) 0%,
+      var(--colorC2) 50%,
+      var(--colorC3) 100%
+    );
+    background: linear-gradient(
+      -45deg,
+      var(--colorC1) 0%,
+      var(--colorC2) 50%,
+      var(--colorC3) 100%
+    );
+  }
+  
+  .gradient-4 {
+    background: var(--colorD1);
+    background: -moz-linear-gradient(
+      -45deg,
+      var(--colorD1) 0%,
+      var(--colorD2) 50%,
+      var(--colorD3) 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--colorD1) 0%,
+      var(--colorD2) 50%,
+      var(--colorD3) 100%
+    );
+    background: linear-gradient(
+      -45deg,
+      var(--colorD1) 0%,
+      var(--colorD2) 50%,
+      var(--colorD3) 100%
+    );
+  }
+  
+  .gradient-5 {
+    background: var(--colorE1);
+    background: -moz-linear-gradient(
+      -45deg,
+      var(--colorE1) 0%,
+      var(--colorE2) 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--colorE1) 0%,
+      var(--colorE2) 100%
+    );
+    background: linear-gradient(-45deg, var(--colorE1) 0%, var(--colorE2) 100%);
+  }
+  
+  .gradient-6 {
+    background: var(--colorF1);
+    background: -moz-linear-gradient(
+      -45deg,
+      var(--colorF1) 0%,
+      var(--colorF2) 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--colorF1) 0%,
+      var(--colorF2) 100%
+    );
+    background: linear-gradient(-45deg, var(--colorF1) 0%, var(--colorF2) 100%);
+  }
+  
+  .gradient-7 {
+    background: var(--colorG1);
+    background: -moz-linear-gradient(
+      -45deg,
+      var(--colorG1) 0%,
+      var(--colorG2) 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--colorG1) 0%,
+      var(--colorG2) 100%
+    );
+    background: linear-gradient(-45deg, var(--colorG1) 0%, var(--colorG2) 100%);
+  }
+  
+  .gradient-8 {
+    background: var(--colorH1);
+    background: -moz-linear-gradient(
+      -45deg,
+      var(--colorH1) 0%,
+      var(--colorH2) 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--colorH1) 0%,
+      var(--colorH2) 100%
+    );
+    background: linear-gradient(-45deg, var(--colorH1) 0%, var(--colorH2) 100%);
+  }
+  
+  .gradient-9 {
+    background: var(--colorI1);
+    background: -moz-linear-gradient(
+      -45deg,
+      var(--colorI1) 0%,
+      var(--colorI2) 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--colorI1) 0%,
+      var(--colorI2) 100%
+    );
+    background: linear-gradient(-45deg, var(--colorI1) 0%, var(--colorI2) 100%);
+  }
+  
+  /* Keyframes for gradient animation */
+  @keyframes gradient {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  /* Frame styling */
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background: #333;
+    color: #fff;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Gradient container styling */
+  div[class^="gradient"] {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 0;
+  }
+  
